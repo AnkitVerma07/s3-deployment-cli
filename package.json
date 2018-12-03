@@ -1,0 +1,62 @@
+{
+  "name": "@paciolan/frontend-deployment-cli",
+  "version": "1.1.1",
+  "description": "CLI for Paciolan React Deployment",
+  "main": "./dist/index.js",
+  "bin": {
+    "pac-react-deploy": "./dist/index.js"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "rimraf dist && babel src --out-dir dist --copy-files",
+    "start": "node ./dist/index.js"
+  },
+  "author": "Paciolan",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.278.1",
+    "axios": "^0.16.2",
+    "chalk": "^1.1.3",
+    "config": "^1.26.1",
+    "fs": "0.0.1-security",
+    "fs-extra": "^3.0.1",
+    "inquirer": "^5.2.0",
+    "joi": "^10.5.2",
+    "js-yaml": "^3.8.4",
+    "jsonwebtoken": "^7.4.1",
+    "keypair": "^1.0.1",
+    "multer": "^1.3.1",
+    "multer-s3": "^2.7.0",
+    "nconf": "^0.10.0",
+    "node-fetch": "^2.2.0",
+    "path": "^0.12.7",
+    "promptly": "^2.2.0",
+    "ramda": "^0.24.1",
+    "table": "^4.0.3"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  },
+  "prettier": {
+    "printWidth": 120
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "s3" : {
+    "bucket": "pac-react-b2b",
+    "env": "dev",
+    "hostUrl": "https://s3-us-west-2.amazonaws.com"
+  },
+  "aws": {
+    "accessKeyId": "AKIAJSGLODC24F35OIJQ",
+    "secretAccessKey": "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",
+    "region": "us-west-1"
+  }
+}
